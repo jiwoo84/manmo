@@ -17,17 +17,26 @@ const CloseBtn = styled.button`
   cursor: pointer;
 `;
 
-const CloseIcon = () => <Icon disabled name="x" />;
+const CloseIcon = () => <Icon disabled name="x" size="large" />;
 
-const ModalContainer: FC = () => {
+type Props = {
+  children: React.ReactNode;
+};
+
+const ModalContainer: React.FC<Props> = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useRecoilState(IsModalOpen);
 
   return (
-    <Modal isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)}>
+    <Modal
+      isOpen={isModalOpen}
+      ariaHideApp={false}
+      onRequestClose={() => setIsModalOpen(false)}
+    >
       <DialogBox>
         <CloseBtn onClick={() => setIsModalOpen(false)}>
           <CloseIcon />
         </CloseBtn>
+        {children}
       </DialogBox>
     </Modal>
   );
