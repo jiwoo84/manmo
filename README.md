@@ -1,6 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ManMo (만나서 모먹지?)
 
-## Getting Started
+* **Date:** 2023.03 ~
+* **Skill:** `React` `Typescript` `Next.js` `Tailwind` `Node.js`
+* 현재 진행중인 개인 프로젝트입니다
+
+## 📌 서비스 소개
+
+친구들끼리 만날 장소 정하기 쉽지 않죠? <br/>
+이제는 위치와 이름, 지도 사이트로 연결되는 목록으로 리스트업해서 투표로 정하세요! <br/>
+인원이 많을수록 편리할거예요!
+
+
+## 실행 방법
 
 First, run the development server:
 
